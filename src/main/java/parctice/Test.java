@@ -1,14 +1,55 @@
 package parctice;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
+
 import org.apache.log4j.Logger;
+
+import parctice.util.SortUtil;
+import parctice.util.TestTimeUtil;
 
 public class Test {
 
 	private static Logger log = Logger.getLogger(Test.class);
+
 	public static void main(String[] args) {
-		for (int i = 0; i < 10; i++ ) {
-			log.debug("hello world " + i);
-		}
+		SortUtil sUtil = new SortUtil();
+		
+		int[] test = {40,70,90,80,20,50,60,30};
+		
+		int number = 100000;
+		int[] array1 = SortUtil.generateRandomArray(number, 0, number);
+//		int[] array1 = SortUtil.generateNearlyOrderArray(number, 100);
+		
+		int[] array2 = SortUtil.copyArray(array1);
+		int[] array3 = SortUtil.copyArray(array1);
+		int[] array4 = SortUtil.copyArray(array1);
+		int[] array5 = SortUtil.copyArray(array1);
+		int[] array6 = SortUtil.copyArray(array1);
+		int[] array7 = SortUtil.copyArray(array1);
+		int[] array8 = SortUtil.copyArray(array1);
+		
+//		
+//		TestTimeUtil.testPerformance("Ñ¡ÔñÅÅÐò", sUtil.getClass(), "selectionSort", array1);
+//		
+//		//TestTimeUtil.testPerformance("²åÈëÅÅÐò", sUtil.getClass(), "insertionSort", array2);
+//		
+//		TestTimeUtil.testPerformance("²åÈëÅÅÐò2.0", sUtil.getClass(), "insertionSort2", array3);
+//		
+//		//TestTimeUtil.testPerformance("Ã°ÅÝÅÅÐò", sUtil.getClass(), "bubbleSort", array4);
+//		
+//		TestTimeUtil.testPerformance("Ï£¶ûÅÅÐò", sUtil.getClass(), "shellSort", array5);
+//		
+//		TestTimeUtil.testPerformance("¹é²¢ÅÅÐò×Ô¶¥ÏòÉÏ", sUtil.getClass(), "mergeSortUpDown", array6);
+//		
+//		TestTimeUtil.testPerformance("¹é²¢ÅÅÐò×Ôµ×ÏòÉÏ", sUtil.getClass(), "mergeSortDownUp", array7);
+//		
+//		TestTimeUtil.testPerformance("¿ìËÙÅÅÐò", sUtil.getClass(), "quickSort", array8);
+//		
+		TestTimeUtil.testPerformance("¿ìËÙÅÅÐò", sUtil.getClass(), "quickSort", test);
+		SortUtil.print(test);
+
 	}
 
 }
