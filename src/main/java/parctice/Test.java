@@ -29,26 +29,30 @@ public class Test {
 		int[] array6 = SortUtil.copyArray(array1);
 		int[] array7 = SortUtil.copyArray(array1);
 		int[] array8 = SortUtil.copyArray(array1);
+		int[] array9 = SortUtil.copyArray(array1);
 		
 //		
 //		TestTimeUtil.testPerformance("选择排序", sUtil.getClass(), "selectionSort", array1);
 //		
 //		//TestTimeUtil.testPerformance("插入排序", sUtil.getClass(), "insertionSort", array2);
 //		
-//		TestTimeUtil.testPerformance("插入排序2.0", sUtil.getClass(), "insertionSort2", array3);
-//		
-//		//TestTimeUtil.testPerformance("冒泡排序", sUtil.getClass(), "bubbleSort", array4);
-//		
-//		TestTimeUtil.testPerformance("希尔排序", sUtil.getClass(), "shellSort", array5);
-//		
-//		TestTimeUtil.testPerformance("归并排序自顶向上", sUtil.getClass(), "mergeSortUpDown", array6);
-//		
-//		TestTimeUtil.testPerformance("归并排序自底向上", sUtil.getClass(), "mergeSortDownUp", array7);
-//		
-//		TestTimeUtil.testPerformance("快速排序", sUtil.getClass(), "quickSort", array8);
-//		
-		TestTimeUtil.testPerformance("快速排序", sUtil.getClass(), "quickSort", test);
-		SortUtil.print(test);
+		TestTimeUtil.testPerformance("插入排序2.0", sUtil.getClass(), "insertionSort2", array3);
+		
+		//TestTimeUtil.testPerformance("冒泡排序", sUtil.getClass(), "bubbleSort", array4);
+		
+		TestTimeUtil.testPerformance("希尔排序", sUtil.getClass(), "shellSort", array5);
+		
+		TestTimeUtil.testPerformance("归并排序自顶向上", sUtil.getClass(), "mergeSortUpDown", array6);
+		
+		TestTimeUtil.testPerformance("归并排序自底向上", sUtil.getClass(), "mergeSortDownUp", array7);
+		
+		TestTimeUtil.testPerformance("快速排序", sUtil.getClass(), "quickSort", array8);
+		
+		TestTimeUtil.testPerformance("堆排序", sUtil.getClass(), "heapSort", array9);
+
+		
+//		TestTimeUtil.testPerformance("快速排序", sUtil.getClass(), "quickSort", test);
+//		SortUtil.print(test);
 
 	}
 

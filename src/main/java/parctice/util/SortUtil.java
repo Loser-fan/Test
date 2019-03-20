@@ -3,6 +3,7 @@ package parctice.util;
 import java.util.ArrayList;
 import java.util.Arrays;
 
+import algorithms.heap.MaxHeap;
 import parctice.util.mergeSort.MergeSort;
 import parctice.util.quickSort.QuickSort;
 import sun.font.CreatedFontTracker;
@@ -243,6 +244,17 @@ public class SortUtil {
 			array[swapY] = temp;
 		}
 		
+		return array;
+	}
+	
+	public static int[] heapSort (int[] array) {
+		
+		int length = array.length;
+		MaxHeap maxHeap = new MaxHeap(length);
+		int[] date = maxHeap.addAll(array);
+		for (int i = length - 1; i >= 0; i--) {
+			array[i] = maxHeap.extractMax();
+		}
 		return array;
 	}
 	
